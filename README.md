@@ -1,6 +1,6 @@
 # UIBasics
 
-git clone 하는 법
+## git clone 하는 법
 
 
 이 때, 디렉토리는 바탕화면으로 해두지 않고, program files 쪽으로 잡아놓는다.
