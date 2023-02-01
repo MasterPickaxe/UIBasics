@@ -17,14 +17,14 @@ github에 있는 프로젝트를 fork 해오고 난 후, cmd 창에서
 을 입력한다. (여기서 dir은 디렉토리)
 
 
-git과 visual studio 연동
+## git과 visual studio 연동
 
 
 visual studio 오른쪽 아래 바에 '소스 제어에 추가' 메뉴가 있다. 'Git(G)'를 선택해서 Git 서비스에 연동한다.
 
 
 
-변경 사항 동기화 하기
+## 변경 사항 동기화 하기
 
 
 변동 사항이 있을 때에는 오른쪽 하단 바에 연필 그림이 나타난다.
@@ -39,7 +39,7 @@ visual studio 오른쪽 아래 바에 '소스 제어에 추가' 메뉴가 있다
 
 
 
-MVVM
+## MVVM
 
 MVVM 패턴은 Model + View + ViewModel 을 합친 용어이다. 
 
