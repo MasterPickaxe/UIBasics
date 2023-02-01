@@ -50,3 +50,5 @@ View: 사용자에서 보여지는 UI 부분, 디자인, xaml로 작성한다.
 
 ViewModel: View를 표현하기 위해 만든 View를 위한 Model이다. View를 나타내 주기 위한 Model이자 View를 나타내기 위한 데이터를 처리하는 부분이자,
 디자인에 연결시킬 데이터 및 데이터의 집합, cs로 작성한다.
+
+![ddb8bb38a4c38eabc82353a908c66285](https://user-images.githubusercontent.com/53402289/215984259-55290a12-5a4a-4e98-97ca-e5992fa2c703.jpg)
