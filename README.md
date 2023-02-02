@@ -1,6 +1,6 @@
-#UIBasics
+# UIBasics
 
-##git clone 하는 법
+## git clone 하는 법
 
 
 이 때, 디렉토리는 바탕화면으로 해두지 않고, program files 쪽으로 잡아놓는다.
@@ -17,14 +17,14 @@ github에 있는 프로젝트를 fork 해오고 난 후, cmd 창에서
 을 입력한다. (여기서 dir은 디렉토리)
 
 
-##git과 visual studio 연동
+## git과 visual studio 연동
 
 
 visual studio 오른쪽 아래 바에 '소스 제어에 추가' 메뉴가 있다. 'Git(G)'를 선택해서 Git 서비스에 연동한다.
 
 
 
-##변경 사항 동기화 하기
+## 변경 사항 동기화 하기
 
 
 변동 사항이 있을 때에는 오른쪽 하단 바에 연필 그림이 나타난다.
@@ -39,7 +39,7 @@ visual studio 오른쪽 아래 바에 '소스 제어에 추가' 메뉴가 있다
 
 
 
-##MVVM
+## MVVM
 
 MVVM 패턴은 Model + View + ViewModel 을 합친 용어이다. 
 
@@ -51,7 +51,7 @@ View: 사용자에서 보여지는 UI 부분, 디자인, xaml로 작성한다.
 ViewModel: View를 표현하기 위해 만든 View를 위한 Model이다. View를 나타내 주기 위한 Model이자 View를 나타내기 위한 데이터를 처리하는 부분이자, 디자인에 연결시킬 데이터 및 데이터의 집합, cs로 작성한다.
 
 
-##Nodify
+## Nodify
 
 
 examples는 대략적으로 실행 되는 app, MVVM 패턴으로 작성되었다.
@@ -68,7 +68,7 @@ Nodify 클래스는 실제로 Editor가 있는 부분, 빌드 시 실행 app과 
 여기에는 MainWindow.xaml 이라는 파일은 없다. 이는 Nodify 클래스가 api의 집합체이기 때문에 app에서 entrypoint가 되는 부분이 필요하지 않기 때문이다.
 
 
-###Themes 파일
+### Themes 파일
 
 실제로 UI를 담당하는 부분이다. 사용자 지정 컨트롤을 만들어주면 자동으로 생성되는데, 이는 vs로 wpf 프로젝트를 만들어보고 그 안에서 사용자 지정 컨트롤을 만들어주면 이해가 쉽다.
 
@@ -89,7 +89,7 @@ static constructor를 만들어서 메모리에 올려놓는다.
 
 
 
-##Connection.xaml
+## Connection.xaml
 
 Connection, LineConnection, CircuitConnection 을 타겟으로 하는 스타일 등이 정의 되어있다.
 
@@ -147,7 +147,7 @@ Style 안에는 Setter 로 각각의 속성의 값을 적용해준다.
 예를 들어 StrokeThickness 라는 DependencyProperty가 있는데 이는 선의 두께를 3으로 했다는 것이다.
 
 
-##Property&DependencyProperty
+## Property&DependencyProperty
 
 BaseConnection.cs 로 들어가보면,
 
@@ -160,7 +160,7 @@ BaseConnection.cs 로 들어가보면,
 wpf에서 간단한 버튼 하나를 만들고 디자인에서 열어보면, Content 에서 Button 이라고 작성되어 있다. 이 Content에서 Button이라고 작성되어 있다. 여기서 이 Content 가 Dependency Property 이다.
 
 
-###Dependency Property에 대한 더 세밀한 후술:
+### Dependency Property에 대한 더 세밀한 후술:
 
 Dependency Property는 의존 프로퍼티 라 해석되며, 프로퍼티 값이 변경되었을 때 자동으로 어떤 일을 처리할 수 있게 해주는 것이다. 스타일링, 데이터 바인딩, 에니메이션 등 WPF 주요 부분에 사용된다.
 
@@ -170,14 +170,14 @@ Dependency Property는 의존 프로퍼티 라 해석되며, 프로퍼티 값이
  오버로드 메소드가 필요할 때에는 Metadata를 추가하면 된다.
 
 
-###일반 Property와 차이점
+### 일반 Property와 차이점
 
  Dependency Property는 값이 변경되었을 때 자동으로 알림을 주는 '변경 통보' 기능이 있다. 일반적인 플랫폼은 데이터 값이 변경되었을 때 UI도 변경되는 기능이 많은데, 이럴 때 Dependency Property를 사용해서 편리하게 구현할 수 있다.
 
 
 
 
-##MvvmTester.MainWindow.xaml
+## MvvmTester.MainWindow.xaml
 
 xaml은 xml 형태이다.
 
@@ -201,7 +201,7 @@ namespace MvvmTester
 cs와 xaml을 연결시켜준다.
 
 
-##각종 태그(접두사)의 명칭 정의
+## 각종 태그(접두사)의 명칭 정의
 
 '''
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
