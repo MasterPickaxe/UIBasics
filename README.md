@@ -77,13 +77,15 @@ Tester 라는 Control에서 상속받은 객체를 만들면, Themes 라는 폴�
 
 Tester 객체와 Generic 과 연결시켜주는 코드:
 
-'''
+
+```
 static Tester()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(Tester), new FrameworkPropertyMetadata(typeof(Tester)));
         }
         
-'''
+```
+
 
 static constructor를 만들어서 메모리에 올려놓는다.
 
@@ -125,7 +127,7 @@ BaseConnection은 일종의 그려서 나타내는 컨트롤을 나타낸다. dr
 control을 상속받은 부분은 control 개체를 기반으로 하는 컨트롤이다. ContentControl은 control에서 상속받았다.
 
 
-'''
+```
 <Style TargetType="{x:Type local:Connection}">
         <Setter Property="StrokeThickness"
                 Value="3" />
@@ -136,7 +138,7 @@ control을 상속받은 부분은 control 개체를 기반으로 하는 컨트�
         <Setter Property="Spacing"
                 Value="20" />
     </Style>
-'''
+```
 
 이 코드는 스타일을 지정하는 스타일, 일종의 컨트롤 스타일이다.
 
@@ -183,7 +185,7 @@ xaml은 xml 형태이다.
 
 Window 테크가 최상단에 위치한다.
 
-'''
+```
 using System.Drawing;
 
 namespace MvvmTester
@@ -196,18 +198,18 @@ namespace MvvmTester
 		}
 	}
 }
-'''
+```
 
 cs와 xaml을 연결시켜준다.
 
 
 ## 각종 태그(접두사)의 명칭 정의
 
-'''
+```
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
 <Button x:Name = "TestBtn">
- '''
+ ```
 
 에서 x 접두사를 쓰고 있다.
 
