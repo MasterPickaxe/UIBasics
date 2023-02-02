@@ -1,5 +1,6 @@
 # UIBasics
 
+
 ## git clone 하는 법
 
 
@@ -17,10 +18,16 @@ github에 있는 프로젝트를 fork 해오고 난 후, cmd 창에서
 을 입력한다. (여기서 dir은 디렉토리)
 
 
+
+
+
 ## git과 visual studio 연동
 
 
 visual studio 오른쪽 아래 바에 '소스 제어에 추가' 메뉴가 있다. 'Git(G)'를 선택해서 Git 서비스에 연동한다.
+
+
+
 
 
 
@@ -49,6 +56,9 @@ Model: 어플리케이션에서 사용되는 데이터와 그 데이터를 처�
 View: 사용자에서 보여지는 UI 부분, 디자인, xaml로 작성한다.
 
 ViewModel: View를 표현하기 위해 만든 View를 위한 Model이다. View를 나타내 주기 위한 Model이자 View를 나타내기 위한 데이터를 처리하는 부분이자, 디자인에 연결시킬 데이터 및 데이터의 집합, cs로 작성한다.
+
+
+
 
 
 ## Nodify
@@ -88,6 +98,8 @@ static Tester()
 
 
 static constructor를 만들어서 메모리에 올려놓는다.
+
+
 
 
 
@@ -149,6 +161,9 @@ Style 안에는 Setter 로 각각의 속성의 값을 적용해준다.
 예를 들어 StrokeThickness 라는 DependencyProperty가 있는데 이는 선의 두께를 3으로 했다는 것이다.
 
 
+
+
+
 ## Property&DependencyProperty
 
 BaseConnection.cs 로 들어가보면,
@@ -160,6 +175,8 @@ BaseConnection.cs 로 들어가보면,
 이 Dependency Property는 일반적인 Property와 차이가 있다.
 
 wpf에서 간단한 버튼 하나를 만들고 디자인에서 열어보면, Content 에서 Button 이라고 작성되어 있다. 이 Content에서 Button이라고 작성되어 있다. 여기서 이 Content 가 Dependency Property 이다.
+
+
 
 
 ### Dependency Property에 대한 더 세밀한 후술:
@@ -213,7 +230,7 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
 에서 x 접두사를 쓰고 있다.
 
-이는 개별 xaml 네임스페이스를 매핑하기 위해 사용된다. 이러한 선언 간의 관계에서 x: 접두사 매핑은 XAML 언어 정의의 일부일 내장 항목을 지원하며, WPF는 XAML을 언어로 사용하고 XAML에 대한 해당 개체의 어휘를 정의하기 위해 사용한다.
+이는 개별 xaml 네임스페이스를 매핑하기 위해 사용된다. 이러한 선언 간의 관계에서 x: 접두사 매핑은 XAML 언어 정의의 요소인 내장 항목을 지원하며, WPF는 XAML을 언어로 사용하고 XAML에 대한 해당 개체의 어휘를 정의하기 위해 사용한다.
 
 :d 접두사의 경우, WPF 디자이너에서 디자이너 네임스페이스로 사용된다. Visual Studio용 WPF 디자이너와 다른 디자인 환경 간의 XAML 교환을 지원하기 위해 네임스페이스가 미리 지정되어 있을 수 있다. d: 네임스페이스의 경우 디자이너에서 XAML 기반 UI를 왕복하는 동안 디자인 상태를 유지하고, 디자이너에서 런타임 데이터 소스를 사용할 수 있게하는 데에도 사용된다.
 
